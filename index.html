@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:'Outfit', sans-serif;
+      /* background-color:hsl(217, 54%, 11%); */
+      /* background-color: hsl(216, 50%, 16%); */
+    }
+
+    .container{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:hsl(217, 54%, 11%);
+      /* background-color: hsl(216, 50%, 16%); */
+    }
+
+    .sub-container{
+      width: 17rem;
+      height: 30rem;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: hsl(216, 50%, 16%);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+    
+    
+    .baba{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-papa{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url(images/image-equilibrium.jpg);
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+    }
+    
+    .view-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      visibility: hidden;
+    }
+
+    .image-papa:hover .view-img{
+      background-blend-mode: color;
+      background-color: hsla(178, 100%, 50%, 0.35);
+      visibility: visible;
+    }
+
+    .heading:hover{
+      color: hsl(178, 100%, 50%);
+    }
+    .c-name:hover{
+      color: hsl(178, 100%, 50%);
+    }
+
+    .content{
+      display: flex;
+      flex-direction: column;
+      gap:1.5rem;
+    }
+
+    .content > h1{
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: hsl(0, 0%, 100%);
+    }
+    
+    .content > p{
+      font-size: 15px;
+      color: hsl(215, 51%, 70%)
+
+    }
+
+    .result{
+      display: flex;
+      justify-content: space-between;
+      /* gap: 2rem; */
+    }
+    
+    .score{
+      display: flex;
+      align-items: center;
+      color:  hsl(178, 100%, 50%);
+      gap: 5px;
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .days{
+      display: flex;
+      align-items: center;
+      align-items: center;
+      color:  hsl(215, 51%, 70%);
+      gap: 5px;
+      font-size: 13px;
+    }
+    
+    .footer{
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer > img{
+      height: 1.8rem;
+      border: 1px solid hsl(0, 0%, 100%);
+      border-radius: 50%;
+    }
+
+    p{
+      display: flex;
+      /* align-items: center; */
+      gap: 5px;
+      font-size: 12px;
+    }
+
+    .creation{
+      color: hsl(215, 51%, 70%);
+    }
+
+    .c-name{
+      color: hsl(0, 0%, 100%);
+      /* font-weight: 400; */
+    }
+/* 
+    .attribution { font-size: 11px; text-align: center; color: gray; }
+    .attribution a { color: black; } */
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="sub-container">
+      
+    <div class="baba">
+    <div class="image-papa">
+      <div class="view-img">
+        <!-- <img class="view-img" src="./images/image-equilibrium.jpg" alt="main-img"> -->
+        <img class="view-img1" src="./images/icon-view.svg" alt="view-img">
+      </div>
+    </div>
+  </div>
+      
+      <div class="content">
+
+        <h1 class="heading">Equilibrium #3429</h1>
+        <p>Onr Equilibrium collection promotes balance and clam.</p>
+        
+        <div class="result">
+          <div class="score">
+            <img src="./images/icon-ethereum.svg" alt="">
+            <span >0.041ETH</span>
+          </div>
+          <div class="days">
+            <img src="./images/icon-clock.svg" alt="">
+            <span>3 days left</span>
+          </div>
+        </div>
+
+        <!-- <button style="border: 0.01px solid hsl(215, 51%, 70%);"></button> -->
+        <div style="border-top: 1px solid hsl(215, 41%, 60%);"></div>
+        
+        <footer class="footer">
+          <img src="./images/image-avatar.png" alt="">
+          <p><span class="creation">Creation of</span><span class="c-name">Jules Wyvern</span></p>
+        </footer>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  
+  <!-- Equilibrium #3429
+    
+    Our Equilibrium collection promotes balance and calm.
+    
+    0.041 ETH
+    3 days left
+    
+    Creation of Jules Wyvern -->
+    
+
+</body>
+</html>
